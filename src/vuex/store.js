@@ -1,15 +1,11 @@
 import Vuex from 'vuex'
-import call from './modules/call-log'
+import notification from './modules/notification'
 
 export default function (Vue) {
-
- Vue.use(Vuex)
- return new Vuex.Store({
-   modules: {
-     call
-   }
- })
+  Vue.use(Vuex)
+  return new Vuex.Store({
+    modules: {
+      notification
+    }
+  })
 }
-
-// store.commit('increment')
-// console.log(store.state.count) // -> 1

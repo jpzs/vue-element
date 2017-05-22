@@ -13,15 +13,6 @@
         <el-form-item>
           <el-input auto-complete="on" placeholder="密码" name='password' type='password' v-model="auth.password"></el-input>
         </el-form-item>
-        <!--<el-form-item>
-          <el-input auto-complete="on" placeholder="分机号" name='agent' v-model="auth.ext_name"></el-input>
-        </el-form-item>
-        -->
-        <!--<el-form-item>
-          <el-input style="width:120px" placeholder="验证码" v-model="auth.vercode"></el-input>
-          <div id='auth-vercode'></div>
-        </el-form-item>-->
-
         <el-form-item>
           <el-button class='submit-button' type="primary" @click="login">登录</el-button>
         </el-form-item>

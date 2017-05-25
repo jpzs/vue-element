@@ -3,7 +3,6 @@
 // "error" or 2 - turn the rule on as an error (exit code will be 1)
 {
   "extends": "vue",
-  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"

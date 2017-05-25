@@ -11,10 +11,15 @@ npm run dev
 npm run build
 ```
 
-## Mock 
+## 特点
 
-使用 [easy-mock](http://easy-mock.com/)
+* 使用 svg sprite 代替 css sprite
+* CSS Grid & Flexbox
+* 使用 Stylus 代替 Sass
+* 待补充
 
-## 兼容
+因为 CSS Grid 的缘故只兼容 firefox 52/chrome 57/safari 10.1/edge 41 及以上, [demo](https://lluvio.github.io/vue-element/#/auth)
 
-目前只兼容 chrome, [demo](https://lluvio.github.io/vue-element/#/auth)
+## Todo
+
+* 增加 [easy-mock](http://easy-mock.com/)

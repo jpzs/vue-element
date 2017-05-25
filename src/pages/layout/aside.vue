@@ -1,54 +1,38 @@
 <template lang="html">
   <div id="aside" class="icons">
     <ul>
-      <li>
-        <router-link to="/admin/current">
+      <li v-for="item in menus">
+        <router-link :to="item.to">
           <div class="aside-link-wrap flex center direction-column">
               <div>
-                <svg> <use xlink:href="#current-phone"></use> </svg>
+                <svg> <use :href="item.icon"></use> </svg>
               </div>
-              <div> 当前通话 </div>
-          </div>
-        </router-link>
-      </li>
-      <li>
-        <router-link to="/admin/customer">
-          <div class="aside-link-wrap flex center direction-column">
-              <div>
-                <svg> <use xlink:href="#kehu"></use> </svg>
-              </div>
-              <div> 客户 </div>
-          </div>
-        </router-link>
-      </li>
-      <li>
-        <router-link to="/admin/banquet">
-          <div class="aside-link-wrap flex center direction-column">
-              <div>
-                <svg> <use xlink:href="#zuoxi"></use> </svg>
-              </div>
-              <div> 坐席 </div>
-          </div>
-        </router-link>
-      </li>
-      <li>
-        <router-link to="/admin/statistics">
-          <div class="aside-link-wrap flex center direction-column">
-              <div>
-                <svg> <use xlink:href="#tongji"></use> </svg>
-              </div>
-              <div> 统计查询 </div>
+              <div> {{item.name}} </div>
           </div>
         </router-link>
       </li>
     </ul>
   </div>
 </template>
-
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      menus: [
+        {
+          to: '/admin/current',
+          icon: '#icon-write',
+          name: '新建文章'
+        }
+      ]
+    }
+  }
+}
 </script>
-<style lang="sass">
+<style lang="stylus">
+  .icons svg
+    height: 20px
+    width: 20px
   #aside
     width: 100px
     color: #fff
@@ -66,6 +50,7 @@ export default {}
       fill: white
     ul
       margin: 0
+      padding: 0
     ul li
       display: list-item
       text-align: center
@@ -75,7 +60,6 @@ export default {}
         color: #fff
         display: inline-block
         text-decoration: none
-        padding: 18px 0
         width: 100%
         height: 100%
         &.router-link-active

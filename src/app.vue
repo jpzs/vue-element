@@ -15,6 +15,7 @@ export default {
 }
 </script>
 
-<style lang='sass'>
-@import "./sass/index.sass"
+<style lang='stylus'>
+@import 'stylus/index.styl'
+
 </style>

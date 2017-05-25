@@ -5,7 +5,7 @@
     </div>
   </div>
 </template>
-<style lang="sass">
+<style lang="stylus">
  #admin-welcome
   position: absolute
   left: 100px

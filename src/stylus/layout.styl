@@ -1,0 +1,24 @@
+.fill-position
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+.flex
+  display: flex
+  &.direction-row
+    flex-direction: row
+  &.direction-column
+    flex-direction: column
+  .h-end
+    justify-content: flex-end
+  .v-center
+    align-items: center
+  &.center
+    justify-content: center
+    align-items: center
+
+for num in (1..20)
+  .flex-{num}
+    flex: num

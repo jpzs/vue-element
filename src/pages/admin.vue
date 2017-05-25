@@ -13,13 +13,13 @@ import navigation from './layout/header.vue'
 import sidebar from './layout/aside.vue'
 
 export default {
-  components : {
+  components: {
     navigation,
     sidebar
   }
 }
 </script>
-<style lang="sass">
+<style lang="stylus">
   #main
     margin: 90px 0 0 110px
 </style>

@@ -1,4 +1,5 @@
 import jsCookies from 'js-cookie'
+
 export default class Cookies {
   static set (key, value) {
     jsCookies.set(key, value)
